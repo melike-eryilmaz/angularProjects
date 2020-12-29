@@ -1,0 +1,64 @@
+Angular Google tarafından geliştirilen Single Page Application web uygulamaları geliştirme teknolojisidir.Javascript framwork üdür.
+Arka tarafında javascript vardır.
+Typescript ile de yazılır.
+
+Angular temel olarak bileşenlerden oluşur.
+ 				Module
+ Application = Component +Component 
+				Service
+        
+Tekrar tekrar kullanabilmek  için kodlar ayrı ayrı componentlerde tutulur.
+Service api ye bağlanıp componentlere data ve operasyon sağlayan yapıdır.
+Angular root denen module ile temelde çalışır.
+Uygulamada başka modulleride referanas alıp kullanabiliriz.
+
+Angular javascript frameworkudur fakat nesnel mimarileri desteklemesi için typescript tercih edilir.
+Javascript,Dart,typescript ile de angular yazılabilir.
+Typescript de javascript tabanlıdır.
+Kodları typescriptte yazdığımız anda arkka tarafta javascripte çevrilir ve javascript dosyası derlenir ,typescript dosyası değil.  
+
+
+Angular CLI :
+Yeni bir angular projesi yapmak,proje için gerekli paketlerin eklenip çıkarılması,projeyi hızlıca yayına almak amacıyla angular ekibi tarafından angular clı çıkarılmıştır.
+(Comment Line İnterface :CLI)
+Watcher izleme sistemi devrededir.
+Angularda çalışırken değişikliği otomatik olarak yansır.
+
+Angular platformunda geliştirme yapabilmek için :
+1.node kurulmalı
+2.npm install -g @angular/cli
+3.C dizininde Angular klasörü oluştur.
+4.cd Angular
+5.ng new projectname
+6.Routing?yes 
+7.cd projectname
+8.ng serve --uygulamamızı yayına almamızı sağlar. 4200 portunda
+9.ng serve --open --Tarayıcıda da açar.
+10.ng serve --port 8081 --istediğimiz portta açılır.
+
+vscode da uygulamamızı açma
+1.cd Angular
+2.cd intro
+3.code .
+
+Component ?
+Bir component bir component class ından ,html den varsa css dosyalarından oluşur.
+Angularda herşey class tır .
+@Component decarotorü ile component olması sağlanıyor.
+templateUrl:Bir componentin classın html i vardır. ./ benimle aynı klasörde demektir.
+class+html iki temel bileşendir componenti oluşturan.
+{{}} parantez ile component içindeki değişkenleri okuyabiliriz.
+ts dosyası + @component decarotorü +html 
+Component içerisinde dataya erişip yeni data oluşturup o datayı gösteriyoruz.
+
+Single Page Application 
+selector biz onu hangi isimle çalıştıracağız o anlama geliyor.
+<app-root>
+
+Kendi component imizi oluşturmak :
+ng g component product 
+
+
+
+
+
