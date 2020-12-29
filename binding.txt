@@ -1,0 +1,11 @@
+ Binding 
+ One way Binding -- > Tek yönlü binding işlemidir.
+ Componentten hmtl kısmına datayı taşımaktır.
+ Component içerisinde tanımlanmış değişkenleri hmtl içersinde göstermeye yarar.
+ Read only binding -- Yani component datasını hmtl görünümü okur.
+ 
+ Two Way Binding --> 
+ Html içerisinde bir isim alanını gösteren kutu olduğunu düşünelim.
+ Component içerisinde isim değişkeninde tutulduğunu düşünelim.
+ Eğer component içerisnde isim değişkeninin değeri değişirse html dede değişir ya da 
+ html içerisinde değer değişirse component te de değişir.Buna two way binding denir.
