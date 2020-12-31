@@ -1,0 +1,74 @@
+<!-- Eğer listede ürün varsa ürün listesi yazısının çıkmasını istiyoruz.Bunun için *ngIf
+yaptık.products tanımlanmışsa anlamına gelir.Componenet de products içerindeki ürünleri silerseniz
+title ı yazmadığını görürüz..
+-->
+<!-- <h3 *ngIf="products">{{title}}</h3> -->
+<!-- Eğer ürün yoksa uyarı vermek istiyorsak else bölümüne şart gerçekleşmediği zaman görüntülenecek
+,çizilecek bir ng-template tanımlayabiliriz.
+-->
+
+<!-- *ngIf bir directive dir.
+Angular’da directive’ler DOM nesnelerini manipule etmek için kullanılır. Angular Directive’lerini kullanarak bir DOM nesnesinin görünümü, davranışını veya layout’unu değiştirebilmemiz mümkün. Ayrıca HTML’i genişletmemize de yardımcı olur.
+
+Directive ‘ler Angular projesi içinde @Directive decoratore yardımıyla oluşturulan javascript class’larıdır.
+
+Directive ‘ler nasıl davradıklarına göre 3 başlıkta sınıflandırılır:
+
+Component Directives
+Structural Directives:
+Structure Directive ‘ler DOM nesnesinin yapısını manipule etmek ve değiştirmek için kullanılır. “*” işareti ile başlarlar.
+*ngIf ,*ngFor structural directivelerdir.
+
+Attribute Directives
+
+-->
+<h3 *ngIf="products ;else noProduct">{{title}}</h3>
+<div class="mb-3">
+    <!-- ngModel -banana notation -two way binding -->
+    <input class="form-control" id="productName" placeholder="Please enter the search text." [(ngModel)]="filterText">
+</div>
+<div class="row">
+    <ng-template #noProduct>
+        <div class="alert alert-primary" role="alert">
+            There are no products in this category.
+        </div>
+    </ng-template>
+    <!-- *ngFor ile products altında bulunan ürünlerimizi tek tek döneriz. -->
+    <div *ngFor="let product of products | productFilter:filterText" class="card" style="width: 18rem;">
+        <!--[src]="product.imageUrl" property binding örneğidir.  -->
+        <img [src]="product.imageUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+            <!-- Pipe ekrandaki datanın istediğiniz şekilde görünmesini sağlamanıza yarar. -->
+            <!-- Built in yani hali hazırda angularda bulunan ve custom olmak üzere ikiye ayrılır. -->
+            <!-- Örnek pipeler |upperCase |lowerCase |currency gibi.. -->
+            <h5 class="card-title">{{product.name}} {{product.price | currency:'USD':true:'1.2-2'}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <!-- event binding click eventine bir fonksiyon bağladık. -->
+            <a (click)="addToCard(product)" class="btn btn-primary">Add Basket</a>
+        </div>
+    </div>
+    <!-- <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div> -->
+</div>
