@@ -17,3 +17,5 @@ Bu repository sıfırdan başlayarak ileri seviyeye  angular framework ünde gel
 Öncelikle component içerisinde datalar verilerek ,sonrasında json-server kullanılarak ürün ve kategoriler bazında örnek uygulamadır.
 Component ,model ,servis mimarisi açıklanmıştır.
 Bootstrap ve font-awesome kullanılmıştır.
+
+7. db/shop.json : shopProject de kullanılan database görevi gören dosyadır.json-server ile birlikte kullanılmıştır.
