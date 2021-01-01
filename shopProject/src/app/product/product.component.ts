@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { AlertifyService } from '../services/alertify.service';
 import { ProductService } from '../services/product.service';
 import { Product } from './Product';
@@ -14,7 +15,10 @@ import { Product } from './Product';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private alertifyService:AlertifyService/*,private http:HttpClient*/,private productService:ProductService) { }
+  constructor(private alertifyService:AlertifyService
+    /*, private http:HttpClient*/,
+    private productService:ProductService,
+    private  activatedRoute:ActivatedRoute) { }
   title = 'Product List';
   filterText ="";
   // products : any[]
@@ -45,10 +49,14 @@ export class ProductComponent implements OnInit {
 
   // }
   //   )
-
-  this.productService.getProducts().subscribe(data=>
-  {this.products=data}
-  );
+    this.activatedRoute.params.subscribe(params =>
+      { this.productService.getProducts(params["categoryId"]).subscribe(data=>
+        {this.products=data}
+        );}
+      )
+  // this.productService.getProducts().subscribe(data=>
+  // {this.products=data}
+  // );
     
   }
   addToCard(product){

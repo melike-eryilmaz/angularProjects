@@ -1,65 +1,64 @@
 {
-  "products": [{
-    "Id": 1,
-    "name": "apple",
-    "categoryId": 2,
-    "description": "Delicious apple.",
-    "price": 520,
-    "imageUrl": "https://images.unsplash.com/photo-1584306670957-acf935f5033c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80"
-  }, {
-    "Id": 2,
-    "name": "banana",
-    "categoryId": 2,
-    "description": "Delicious banana.",
-    "price": 520,
-    "imageUrl": "https://images.unsplash.com/photo-1543218024-57a70143c369?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
-  }, {
-    "Id": 3,
-    "name": "strawberry",
-    "categoryId": 2,
-    "description": "Delicious strawberry.",
-    "price": 520,
-    "imageUrl": "https://images.unsplash.com/photo-1564518087238-8d82baa9d7cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-  }, {
-    "Id": 4,
-    "name": "blueberry",
-    "categoryId": 2,
-    "description": "Delicious blueberry.",
-    "price": 520,
-    "imageUrl": "https://images.unsplash.com/photo-1566400628146-ae8f27849e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-  }, {
-    "Id": 5,
-    "name": "lemon",
-    "categoryId": 2,
-    "description": "Delicious lemon.",
-    "price": 520,
-    "imageUrl": "https://images.unsplash.com/photo-1590502593747-42a996133562?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
-  }, {
-    "Id": 6,
-    "name": "bread",
-    "categoryId": 5,
-    "description": "Delicious bread.",
-    "price": 520,
-    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
-  }
+    "products": [{
+            "Id": 1,
+            "name": "apple",
+            "categoryId": 2,
+            "description": "Delicious apple.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1584306670957-acf935f5033c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80"
+        }, {
+            "Id": 2,
+            "name": "banana",
+            "categoryId": 2,
+            "description": "Delicious banana.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1543218024-57a70143c369?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
+        }, {
+            "Id": 3,
+            "name": "strawberry",
+            "categoryId": 2,
+            "description": "Delicious strawberry.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1564518087238-8d82baa9d7cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        }, {
+            "Id": 4,
+            "name": "blueberry",
+            "categoryId": 2,
+            "description": "Delicious blueberry.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1566400628146-ae8f27849e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        }, {
+            "Id": 5,
+            "name": "lemon",
+            "categoryId": 2,
+            "description": "Delicious lemon.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1590502593747-42a996133562?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
+        }, {
+            "Id": 6,
+            "name": "bread",
+            "categoryId": 5,
+            "description": "Delicious bread.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+        }
 
-  ],
-  "categories": [{
-    "id": 1,
-    "name": "Fruits"
-  }, {
-    "id": 1,
-    "name": "Vegetables"
-  }, {
-    "id": 1,
-    "name": "Chickhens"
-  }, {
-    "id": 1,
-    "name": "Cakes"
-  }, {
-    "id": 1,
-    "name": "Salads"
-  }
-  ]
+    ],
+    "categories": [{
+        "id": 1,
+        "name": "Fruits"
+    }, {
+        "id": 2,
+        "name": "Vegetables"
+    }, {
+        "id": 3,
+        "name": "Chickhens"
+    }, {
+        "id": 4,
+        "name": "Cakes"
+    }, {
+        "id": 5,
+        "name": "Salads"
+    }]
 
 }

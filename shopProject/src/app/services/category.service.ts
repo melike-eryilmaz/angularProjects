@@ -12,7 +12,7 @@ export class CategoryService {
 
   constructor(private http:HttpClient) { }
 
-  path :string ="http://localhost:3000/products";
+  path :string ="http://localhost:3000/categories";
   
 
   getCategories():Observable<Category[]>{

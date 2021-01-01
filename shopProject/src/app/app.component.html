@@ -4,8 +4,11 @@
         <app-category></app-category>
     </div>
     <div class="col-md-9">
-        <app-product></app-product>
+        <!-- <app-product></app-product> -->
+        <router-outlet></router-outlet>
     </div>
 </div>
-
-<router-outlet></router-outlet>
+<!-- Router-outlet yukarıdaki route bakar.Örneğin product geldi .Gider ve routing.module içerisinde 
+eğer products gelirse hangi component çizilecek öğrenir .Ve o component html ini çizer.
+-->
+<!-- <router-outlet></router-outlet> -->
