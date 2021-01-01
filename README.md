@@ -11,11 +11,18 @@ Bu repository sıfırdan başlayarak ileri seviyeye  angular framework ünde gel
 
 4.moduleAndnpm.txt :Module ve npm yapısı hakkında bilgi verilmiştir.
 
-5.firstAngularProject : Angular temel mimarisi hakkında bilgi edinmek adına temel yapıyı açıklayan ilk proje eklenmiştir.
+5.dependenciesInfo.txt : Angular dependencies /devdependencies açıklanmıştır.
 
-6.shopProject : Angular component mimarisine giriş yapmak için orta düzeyli bir proje eklenmiştir.
+6.typesafeAndpipe.txt :pipe ve tip güvenli çalışmak açıklanmıştır.
+
+7.servicesInfo.txt :Angular services yapısı açıklanmıştır.
+
+8.firstAngularProject : Angular temel mimarisi hakkında bilgi edinmek adına temel yapıyı açıklayan ilk proje eklenmiştir.
+
+9.shopProject : Angular component mimarisine giriş yapmak için orta düzeyli bir proje eklenmiştir.
 Öncelikle component içerisinde datalar verilerek ,sonrasında json-server kullanılarak ürün ve kategoriler bazında örnek uygulamadır.
 Component ,model ,servis mimarisi açıklanmıştır.
 Bootstrap ve font-awesome kullanılmıştır.
 
-7. db/shop.json : shopProject de kullanılan database görevi gören dosyadır.json-server ile birlikte kullanılmıştır.
+10. db/shop.json : shopProject de kullanılan database görevi gören dosyadır.json-server ile birlikte kullanılmıştır.
+

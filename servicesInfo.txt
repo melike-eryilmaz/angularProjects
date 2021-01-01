@@ -1,0 +1,44 @@
+Angular da services tekrar tekrar kullanılabilirlik açısından kurulan sistemlerdir.
+Her yerde çalıştıracağımız bir kod bloğu olduğunu düşünelim.
+Services le componentlerin kullandığı ortak kodları yazarız.
+
+ng g service alertify
+
+@Injectable dekaratorunden besleniyor olmalıdır.
+
+Global services uygulamada her yerden kullanılabilir demektir.
+
+Sadece o component de o service ınstance oluşmasını istiyorsak lokal service kullanırız.
+Service component spesific service ise yapılır.
+
+Sepet gibi birbirine karışmaması gereken şeyler lokal service dir.
+Lokal service kullanmak için serivce i app.module içerisindeki 
+providers tan kaldırırız.
+component içerisinde providers tanımlayıp koyarız.
+Angular constructor içerisinde service ınstance ını görünce önce gidip 
+bu servis global bir servis mi diye bakar daha sonra globalse globalde oluşan ınstance alır.
+Lokal ise o component için yeni bir instance oluşturur.
+
+
+Angular da direkt front-end tarafına erişmek mümkün değildir.
+Arka tarafta web api vardır o api database e erişip angulara restful yayın yapar .
+Yani json veri döner.
+
+
+json server
+npm install -g json-server
+json-server --watch shop.json
+
+
+Observable ile çalışmak
+ng g service product
+ 
+ Observable döner .
+ Observable subscribe ı görene kadar devam eder.
+ providers altına lokal service eklenir.
+ 
+ yolda data giderken başkasıda 
+ pipe ile tap ve catchError kullanılır.
+ datanın sonlandığı yere kadar giderken observe edebiliriz.
+   
+   router outlet --route neyse o componentin htmlini oraya koyarım anlamına gelir.

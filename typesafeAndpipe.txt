@@ -1,0 +1,21 @@
+	Tip güvenli çalışmak
+any tipindeki işlemler güvenli bir programlama yapısı değildir.
+spec.ts dosyası birim testi için bulunuyor.
+product.ts dosyası içerisine PRODUCT classını koyalım.
+
+	Pipe ile çalışmak
+Kelime anlamı boru demektir.
+Ekrandaki datanın istediğiniz şekilde değiştirilmesidir.
+Built-in pipe : mevcutta yazılı pipeler
+|uppercase |lowercase
+|currency
+
+
+ng g pipe productFilter
+
+pipetransform : datayı değiştiriyor
+product value parametre string dönüş tipi 
+
+
+Event Binding 
+event ismi hangi operasyona bağlanacak.

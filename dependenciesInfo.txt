@@ -1,0 +1,16 @@
+Angular framework tür.
+İstediğimiz diğer javascript teknolojilerini kullanabiliriz.
+package.json :Projemizin içerisinde kullanılan paketleri gösterir.
+dependencies,devdependicies nedir?
+dependencies:proje için gerekli kütüphaneler burada yer almalıdır.Örneğin bootstrap..
+devdependencies :Geliştiriciler için gerekli kütüphaneler burada yer almalıdır.
+Örneğin test programları vs..
+Dependencies içerisine "bootstrap":"4.1.3" şeklinde kütüphaneler ekleyip npm install dersek npm node_modules 
+altındaki dosyalara bakar ve bootstrap yoksa yükler varsa versiyonu kontorol eder.
+
+npm install :package json dosyasında güncelleme yapılması gerekli ise yapar.
+node_modules altında kurulu olan dosyalar ile karşılaştırır ve güncellemeler yapar.
+
+npm install font-awesome şeklindede ekleme yapılabilir.
+
+styles.css : glabal style dosyası :global css lerimiz varsa onları ekleyebiliriz.
