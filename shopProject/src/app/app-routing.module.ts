@@ -6,6 +6,8 @@ import { ProductComponent } from './product/product.component';
 const routes: Routes = [
     //Eğer /products gelmişse product componentini çalıştır.
     {path:'products',component:ProductComponent},
+    {path:'product-add-1',component:ProductComponent},
+    {path:'product-add-2',component:ProductComponent},
     // Gidilecek component i category yaparsak products routunda category componentin çizildiğini görürüz.
     // {path:'products',component:CategoryComponent},
 

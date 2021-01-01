@@ -36,7 +36,7 @@ Attribute Directives
     <!-- *ngFor ile products altında bulunan ürünlerimizi tek tek döneriz. -->
     <div *ngFor="let product of products | productFilter:filterText" class="card" style="width: 18rem;">
         <!--[src]="product.imageUrl" property binding örneğidir.  -->
-        <img [src]="product.imageUrl" class="card-img-top" alt="...">
+        <img [src]="product.imageUrl" class="card-img-top img" alt="...">
         <div class="card-body">
             <!-- Pipe ekrandaki datanın istediğiniz şekilde görünmesini sağlamanıza yarar. -->
             <!-- Built in yani hali hazırda angularda bulunan ve custom olmak üzere ikiye ayrılır. -->
