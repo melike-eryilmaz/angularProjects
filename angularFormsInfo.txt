@@ -1,0 +1,3 @@
+Angularda 2 adet formlarla çalışma yöntemi vardır.
+Bunlardan biri klasik formlar yani FormsModule kullanılarak yapılan çalışmlardır.
+Diğeri ise Reactive Forms module kullanılarak yapılan çalışmalardır.

@@ -9,14 +9,16 @@ import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
 import { AlertifyService } from './services/alertify.service';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { ProductAddClassicFormsComponent } from './product/product-add-classic-forms/product-add-classic-forms.component'
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     CategoryComponent,
     ProductComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    ProductAddClassicFormsComponent
   ],
   imports: [
     BrowserModule,
