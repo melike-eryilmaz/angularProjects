@@ -1,0 +1,39 @@
+<p>product-add-reactive-forms works!</p>
+<H3>Add new product-Reactive</H3>
+<form [formGroup]="productAddForm" (ngSubmit)="add()">
+    <div class="form-group">
+        <input type="text" id="name" name="name" formControlName="name" class="form-control" placeholder="product name">
+        <div class="alert alert-danger" *ngIf="productAddForm.get('name').hasError('required') 
+        && productAddForm.get('name').dirty"> Product name required</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="description" name="description" formControlName="description" class="form-control" placeholder="description">
+        <div class="alert alert-danger" *ngIf="productAddForm.get('description').hasError('required') 
+        && productAddForm.get('description').dirty"> Description name required</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="imageUrl" name="imageUrl" formControlName="imageUrl" class="form-control" placeholder="imageUrl">
+        <div class="alert alert-danger" *ngIf="productAddForm.get('imageUrl').hasError('required') 
+        && productAddForm.get('imageUrl').dirty"> imageUrl name required</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="price" name="price" formControlName="price" class="form-control" placeholder="price">
+        <div class="alert alert-danger" *ngIf="productAddForm.get('price').hasError('required') 
+        && productAddForm.get('price').dirty"> price name required</div>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="categoryId" name="categoryId" formControlName="categoryId">
+            <option *ngFor="let category of categories" 
+            [value]="category.id"
+            
+            >{{category.name}}</option>
+        </select>
+        <div *ngIf="productAddForm.get('categoryId').hasError('required') 
+        && productAddForm.get('categoryId').touched" class="alert alert-danger">
+            category required
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="productAddForm.invalid">
+        Add Product 
+    </button>
+</form>

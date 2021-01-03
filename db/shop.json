@@ -63,6 +63,14 @@
       "price": "23",
       "categoryId": "1",
       "id": 13
+    },
+    {
+      "name": "Pineapple",
+      "description": "Deliciouss",
+      "imageUrl": "https://cdn.yemek.com/mnresize/940/940/uploads/2020/01/ananasin-faydalari-site.jpg",
+      "price": "23",
+      "categoryId": "1",
+      "id": 14
     }
   ],
   "categories": [

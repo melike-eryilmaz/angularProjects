@@ -1,3 +1,12 @@
 Angularda 2 adet formlarla çalışma yöntemi vardır.
 Bunlardan biri klasik formlar yani FormsModule kullanılarak yapılan çalışmlardır.
 Diğeri ise Reactive Forms module kullanılarak yapılan çalışmalardır.
+
+Reactive formların avantajı validasyon olayı componentde yapılır.
+Test edilebilir ve olayı tek bir noktadan yönetebilmemizi sağlar.
+
+Klasik formlarda validasyon html de yapılır.
+
+formBuilder form ile ilgili validasyon yapmamızı sağlar.
+formGroup formu yönetebileceğimiz yerdir.
+ 

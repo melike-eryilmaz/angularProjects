@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CategoryComponent } from './category/category.component';
 import { ProductAddClassicFormsComponent } from './product/product-add-classic-forms/product-add-classic-forms.component';
+import { ProductAddReactiveFormsComponent } from './product/product-add-reactive-forms/product-add-reactive-forms.component';
 import { ProductComponent } from './product/product.component';
 
 const routes: Routes = [
     //Eğer /products gelmişse product componentini çalıştır.
     {path:'products',component:ProductComponent},
     {path:'product-add-1',component:ProductAddClassicFormsComponent},
-    {path:'product-add-2',component:ProductComponent},
+    {path:'product-add-2',component:ProductAddReactiveFormsComponent},
     // Gidilecek component i category yaparsak products routunda category componentin çizildiğini görürüz.
     // {path:'products',component:CategoryComponent},
 

@@ -37,7 +37,7 @@
             >{{category.name}}</option>
         </select>
         <div *ngIf="categoryId.invalid && categoryId.touched" class="alert alert-danger">
-            price required
+            category required
         </div>
     </div>
     <button type="submit" class="btn btn-primary" [disabled]="productAddForm.invalid">
