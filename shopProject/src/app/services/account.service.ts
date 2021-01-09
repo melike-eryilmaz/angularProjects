@@ -10,9 +10,10 @@ export class AccountService {
   login(user:User):boolean{
       if(user.userName == 'Melike' && user.password == '123a')
       {
-        return true;
         this.loggedIn = true;
         localStorage.setItem('isLogged',user.userName)
+        return true;
+       
       }
       return false ;
   }
