@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CategoryComponent } from './category/category.component';
 import { LoginComponent } from './login/login.component';
+import { LoginGuard } from './login/login.guard';
 import { ProductAddClassicFormsComponent } from './product/product-add-classic-forms/product-add-classic-forms.component';
 import { ProductAddReactiveFormsComponent } from './product/product-add-reactive-forms/product-add-reactive-forms.component';
 import { ProductComponent } from './product/product.component';
@@ -9,7 +10,8 @@ import { ProductComponent } from './product/product.component';
 const routes: Routes = [
     //Eğer /products gelmişse product componentini çalıştır.
     {path:'products',component:ProductComponent},
-    {path:'product-add-1',component:ProductAddClassicFormsComponent},
+    //canActivate ile burada eğer product-add-1 yoluna gidilirse LoginGuarda bakmasını söylüyoruz.
+    {path:'product-add-1',component:ProductAddClassicFormsComponent,canActivate:[LoginGuard]},
     {path:'product-add-2',component:ProductAddReactiveFormsComponent},
     // Gidilecek component i category yaparsak products routunda category componentin çizildiğini görürüz.
     // {path:'products',component:CategoryComponent},

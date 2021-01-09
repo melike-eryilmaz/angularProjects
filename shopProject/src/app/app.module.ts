@@ -14,6 +14,7 @@ import { ProductAddClassicFormsComponent } from './product/product-add-classic-f
 import { ProductAddReactiveFormsComponent } from './product/product-add-reactive-forms/product-add-reactive-forms.component';
 import { LoginComponent } from './login/login.component'
 import { AccountService } from './services/account.service';
+import { LoginGuard } from './login/login.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,7 @@ import { AccountService } from './services/account.service';
     HttpClientModule,
     ReactiveFormsModule  ],
   //Global serviceler burada tanımlanmalıdır.
-  providers: [AlertifyService,AccountService],
+  providers: [AlertifyService,AccountService,LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
