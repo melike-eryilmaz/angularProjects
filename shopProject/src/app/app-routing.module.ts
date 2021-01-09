@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CategoryComponent } from './category/category.component';
+import { LoginComponent } from './login/login.component';
 import { ProductAddClassicFormsComponent } from './product/product-add-classic-forms/product-add-classic-forms.component';
 import { ProductAddReactiveFormsComponent } from './product/product-add-reactive-forms/product-add-reactive-forms.component';
 import { ProductComponent } from './product/product.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
 
     //Eğer hiçbirşey gelmemişse products route a yönlendir.Kesinlikle hiçbir şey gelmemişse.'full'
     {path:'',redirectTo:'products',pathMatch:'full'},
-    {path:'products/category/:categoryId',component:ProductComponent}
+    {path:'products/category/:categoryId',component:ProductComponent},
+    {path:'login',component:LoginComponent}
 
 ];
 

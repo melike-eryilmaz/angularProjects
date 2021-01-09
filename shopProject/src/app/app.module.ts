@@ -11,7 +11,9 @@ import { ProductFilterPipe } from './product/product-filter.pipe';
 import { AlertifyService } from './services/alertify.service';
 import {HttpClientModule} from '@angular/common/http';
 import { ProductAddClassicFormsComponent } from './product/product-add-classic-forms/product-add-classic-forms.component';
-import { ProductAddReactiveFormsComponent } from './product/product-add-reactive-forms/product-add-reactive-forms.component'
+import { ProductAddReactiveFormsComponent } from './product/product-add-reactive-forms/product-add-reactive-forms.component';
+import { LoginComponent } from './login/login.component'
+import { AccountService } from './services/account.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,17 +22,17 @@ import { ProductAddReactiveFormsComponent } from './product/product-add-reactive
     ProductComponent,
     ProductFilterPipe,
     ProductAddClassicFormsComponent,
-    ProductAddReactiveFormsComponent
+    ProductAddReactiveFormsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule  ],
   //Global serviceler burada tanımlanmalıdır.
-  providers: [AlertifyService],
+  providers: [AlertifyService,AccountService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
