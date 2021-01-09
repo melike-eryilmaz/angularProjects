@@ -1,102 +1,100 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "apple",
-      "categoryId": 1,
-      "description": "Delicious apple.",
-      "price": 520,
-      "imageUrl": "https://images.unsplash.com/photo-1551445523-324a0fdab051?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1532&q=80"
-    },
-    {
-      "id": 2,
-      "name": "banana",
-      "categoryId": 1,
-      "description": "Delicious banana.",
-      "price": 520,
-      "imageUrl": "https://images.unsplash.com/photo-1543218024-57a70143c369?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFuYW5hfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-    },
-    {
-      "id": 3,
-      "name": "strawberry",
-      "categoryId": 1,
-      "description": "Delicious strawberry.",
-      "price": 520,
-      "imageUrl": "https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=542&q=80"
-    },
-    {
-      "id": 4,
-      "name": "blueberry",
-      "categoryId": 1,
-      "description": "Delicious blueberry.",
-      "price": 520,
-      "imageUrl": "https://images.unsplash.com/photo-1566400628146-ae8f27849e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-    },
-    {
-      "id": 5,
-      "name": "lemon",
-      "categoryId": 1,
-      "description": "Delicious lemon.",
-      "price": 520,
-      "imageUrl": "https://images.unsplash.com/photo-1590502593747-42a996133562?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
-    },
-    {
-      "id": 6,
-      "name": "bread",
-      "categoryId": 6,
-      "description": "Delicious bread.",
-      "price": 520,
-      "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
-    },
-    {
-      "id": 12,
-      "name": "apple",
-      "categoryId": 1,
-      "description": "Delicious apple.",
-      "price": 520,
-      "imageUrl": "https://images.unsplash.com/photo-1551445523-324a0fdab051?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1532&q=80"
-    },
-    {
-      "name": "Pineapple",
-      "description": "Deliciouss",
-      "imageUrl": "https://cdn.yemek.com/mnresize/940/940/uploads/2020/01/ananasin-faydalari-site.jpg",
-      "price": "23",
-      "categoryId": "1",
-      "id": 13
-    },
-    {
-      "name": "Pineapple",
-      "description": "Deliciouss",
-      "imageUrl": "https://cdn.yemek.com/mnresize/940/940/uploads/2020/01/ananasin-faydalari-site.jpg",
-      "price": "23",
-      "categoryId": "1",
-      "id": 14
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "name": "Fruits"
-    },
-    {
-      "id": 2,
-      "name": "Vegetables"
-    },
-    {
-      "id": 3,
-      "name": "Chickhens"
-    },
-    {
-      "id": 4,
-      "name": "Cakes"
-    },
-    {
-      "id": 5,
-      "name": "Salads"
-    },
-    {
-      "id": 6,
-      "name": "Breads"
-    }
-  ]
+    "products": [{
+            "id": 1,
+            "name": "apple",
+            "categoryId": 1,
+            "description": "Delicious apple.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1551445523-324a0fdab051?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1532&q=80"
+        },
+        {
+            "id": 2,
+            "name": "banana",
+            "categoryId": 1,
+            "description": "Delicious banana.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1543218024-57a70143c369?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFuYW5hfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            "id": 3,
+            "name": "strawberry",
+            "categoryId": 1,
+            "description": "Delicious strawberry.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=542&q=80"
+        },
+        {
+            "id": 4,
+            "name": "blueberry",
+            "categoryId": 1,
+            "description": "Delicious blueberry.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1566400628146-ae8f27849e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        },
+        {
+            "id": 5,
+            "name": "lemon",
+            "categoryId": 1,
+            "description": "Delicious lemon.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1590502593747-42a996133562?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
+        },
+        {
+            "id": 6,
+            "name": "bread",
+            "categoryId": 6,
+            "description": "Delicious bread.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+        },
+        {
+            "id": 12,
+            "name": "apple",
+            "categoryId": 1,
+            "description": "Delicious apple.",
+            "price": 520,
+            "imageUrl": "https://images.unsplash.com/photo-1551445523-324a0fdab051?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1532&q=80"
+        },
+        {
+            "name": "Pineapple",
+            "description": "Deliciouss",
+            "imageUrl": "https://cdn.yemek.com/mnresize/940/940/uploads/2020/01/ananasin-faydalari-site.jpg",
+            "price": "23",
+            "categoryId": "1",
+            "id": 13
+        },
+        {
+            "name": "Pineapple",
+            "description": "Deliciouss",
+            "imageUrl": "https://cdn.yemek.com/mnresize/940/940/uploads/2020/01/ananasin-faydalari-site.jpg",
+            "price": "23",
+            "categoryId": "1",
+            "id": 14
+        }
+    ],
+    "categories": [{
+            "id": 1,
+            "name": "Fruits"
+        },
+        {
+            "id": 2,
+            "name": "Vegetables"
+        },
+        {
+            "id": 3,
+            "name": "Chickhens"
+        },
+        {
+            "id": 4,
+            "name": "Cakes"
+        },
+        {
+            "id": 5,
+            "name": "Salads"
+        },
+        {
+            "id": 6,
+            "name": "Breads"
+        }
+    ]
 }
