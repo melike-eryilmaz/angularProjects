@@ -8,8 +8,11 @@
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
                 <!-- <a class="nav-link" href="#">Sign out</a> -->
-                <a class="nav-link" routerLink="login">
+                <a *ngIf="isLoggedIn()==false" class="nav-link" routerLink="login">
                     <span data-feather="shopping-cart"></span> Login
+                </a>
+                <a *ngIf="isLoggedIn()==true" (click)="logOut()" class="nav-link">
+                    <span data-feather="shopping-cart"></span> LogOut
                 </a>
             </li>
         </ul>
